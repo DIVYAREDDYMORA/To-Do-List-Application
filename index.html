@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        img{
+           height: 100px;
+          width: 100px;
+          border-radius: 40%;
+         float: left;
+        }
+        .header{
+          text-align: center;
+           font-size: 27px;
+         }  
+         section{
+            text-align: center;
+            height: 600px;
+            width: 100%;
+            font-size: 23px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         input{
+            width: 100%;
+            height: 30px;
+         }
+         select{
+            width: 60%;
+            height: 30px;
+         }
+         body{
+         background-image: url('https://wallpaperaccess.com/full/4570700.jpg');
+          background-size: cover;
+         }
+    </style>
+</head>
+<body>
+    <img src="https://ci3.googleusercontent.com/meips/ADKq_NbX1am19_vA1KDO8MTKqOlL7tBCQ7HEKjHHfBYG3Bx8kaEDkk9rKxFuUb-b-LbjU82gSWrt8xXJBB0fAywhUqoDbYu9pGrZOzZmcaRenhgh4YEFqBpyHUhsqgzRz-DoIpIIzMk_dh9F_Wf_IXgmre1tWEvJ_yna4dIEyuxuc07Jd4ZxY_YBJ1d4UunyRPdc9ytgD-12cszZo7KgPnt4pm32NAo1qEs=s0-d-e1-ft#https://dynamic.brandcrowd.com/preview/logodraft/f36f1a6a-0e0a-452e-8ef8-fad40575fc67/image/large.png?bust=4efc742f-76ae-48cc-8209-1fc1f59ad53a" alt="" class="img">
+        <h4>テディ@レディ</h4>
+        <div class="header">
+            <h1>Teddy@Reddy</h1>
+            <h1> TO-DO LIST APPLICATION</h1>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <h1>To-Do List</h1>
+            <div>
+                <label for="taskInput">Task:</label>
+                <input type="text" id="taskInput" placeholder="Enter task...">
+            </div>
+            <div>
+                <label for="taskType">Type:</label>
+                <input type="text" id="taskType" placeholder="Type of task...">
+            </div>
+            <div>
+                <label for="taskImportance">Importance:</label><br>
+                <select id="taskImportance">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+            <div>
+                <label for="taskTime">Time to be done:</label>
+                <input type="datetime-local" id="taskTime">
+            </div>
+            <button onclick="addTask()">Add Task</button>
+            <div id="taskList"></div>
+        </div>
+        <script src="script.js"></script>
+    </section>
+    <script src="script.js"></script>
+    <footer>
+        <div style="text-align: center; display: flex; justify-content: space-evenly;">
+            <h2>&copy; Teddy@Reddy</h2>
+            <h2>&copy; TO-DO LIST APPLICATION</h2>
+        </div>
+        <div style="text-align: center; display: flex; justify-content: space-evenly;">
+            <h2>&copy; All Copy Rights Are for Teddy@Reddy Website </h2>
+            <br>
+            <h2>support</h2>
+            <h2>Terms & Privacy</h2>
+        </div>
+    </footer>
+</body>
+</html>
